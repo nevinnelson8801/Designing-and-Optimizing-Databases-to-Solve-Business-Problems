@@ -60,12 +60,14 @@ With projected 20% annual growth in beneficiary numbers and planned service expa
 ## Chapter 3: Proposed Database Design
 
 ### Conceptual Model
+<img width="454" height="315" alt="image" src="https://github.com/user-attachments/assets/f1a3e6e5-bdf9-4ea6-bc9a-953d05271d7a" />
 
 The Entity-Relationship (ER) Diagram shows core business entities and their relationships, providing a high-level overview of system scope that is easy for stakeholders to understand.
 
 **Core Entities:** Donors, Donations, InventoryItems, Beneficiaries, Volunteers, Distributions, DistributionDetails
 
 ### Logical Model
+<img width="474" height="467" alt="image" src="https://github.com/user-attachments/assets/ec53e95f-994a-4f37-ac48-22624e923ffe" />
 
 The logical model expands on the conceptual model by defining detailed attributes and relationships across all seven tables.
 
@@ -85,6 +87,7 @@ See [`sql/schema/create_tables.sql`](../sql/schema/create_tables.sql) for the fu
 ## Chapter 4: Queries for Data Analysis and Problem-Solving
 
 ### Performance Improvements
+<img width="439" height="233" alt="image" src="https://github.com/user-attachments/assets/53f52662-5852-4a82-962c-168cb081fc39" />
 
 | Metric | Before | After |
 |---|---|---|
@@ -118,6 +121,7 @@ See [`sql/queries/transactions.sql`](../sql/queries/transactions.sql)
 1. **Atomic Transactions** — `START TRANSACTION` / `COMMIT` / `ROLLBACK` ensuring inventory never goes negative during distribution processing
 2. **Optimistic Locking** — Version column incremented on each update; conflicting updates are silently rejected
 3. **Row-Level Locking** — `SELECT ... FOR UPDATE` prevents race conditions during inventory deductions
+<img width="400" height="390" alt="image" src="https://github.com/user-attachments/assets/3eb5b613-61d7-4f34-b957-2d92334fb5ad" />
 
 ---
 
