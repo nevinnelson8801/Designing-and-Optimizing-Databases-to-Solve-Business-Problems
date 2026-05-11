@@ -1,24 +1,4 @@
-# Designing and Optimizing Databases to Solve Business Problems
 
-**Programme:** BSc Computer Science and Digitization  
-**Author:** Nevin Nelson (Q1071615)  
-**Year:** 2024–2027  
-**Date:** 05/02/2025
-
----
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Chapter 1: Organization and Problem Identification](#chapter-1-organization-and-problem-identification)
-3. [Chapter 2: Information or Data Gathering](#chapter-2-information-or-data-gathering)
-4. [Chapter 3: Proposed Database Design](#chapter-3-proposed-database-design)
-5. [Chapter 4: Queries for Data Analysis and Problem-Solving](#chapter-4-queries-for-data-analysis-and-problem-solving)
-6. [Chapter 5: Optimization Techniques](#chapter-5-optimization-techniques)
-7. [Conclusion](#conclusion)
-8. [Bibliography](#bibliography)
-
----
 
 ## Introduction
 
@@ -171,6 +151,7 @@ Key techniques applied:
 The database has been normalized to **3NF (Third Normal Form)**, eliminating transitive dependencies and ensuring data integrity.
 
 ### Optimization Results
+<img width="452" height="241" alt="image" src="https://github.com/user-attachments/assets/a62d1a0f-279c-4cfe-851d-a65a017dff01" />
 
 - Query response time reduced by **75%**
 - Database throughput increased by **60%**
